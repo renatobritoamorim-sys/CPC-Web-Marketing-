@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPC Web Marketing | Agência de Marketing em Connecticut</title>
+    <meta name="description" content="Agência de marketing brasileira em Connecticut, EUA. Cresça sua empresa com previsibilidade e leads qualificados.">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '957146610469028');
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=957146610469028&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <style>
+        /* =========================================
+           RESET & VARIABLES
+           ========================================= */
+        :root {
+            --color-bg-light: #FFFFFF;
+            --color-bg-gray: #f3f4f6;
+            --color-text-main: #000000;
+            --color-text-muted: #4b5563;
+            --color-accent: #f4a900;
+            --color-accent-hover: #d69400;
+            --color-white: #FFFFFF;
+            
+            --font-main: 'Inter', sans-serif;
+            
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 6rem;
+            
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-full: 9999px;
+            
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-glow: 0 0 20px rgba(244, 169, 0, 0.3);
+            
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--color-text-main);
+            background-color: var(--color-bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit;
+        }
+
+        /* =========================================
+           UTILITIES
+           ========================================= */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: var(--spacing-lg) 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bg-gray {
+            background-color: var(--color-bg-gray);
+        }
+
+        .bg-white {
+            background-color: var(--color-bg-light);
+        }
+
+        .text-center { text-align: center; }
+        .text-accent { color: var(--color-accent); }
+        .font-bold { font-weight: 700; }
+        
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid {
+            display: grid;
+            gap: var(--spacing-md);
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--color-text-main);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--color-accent);
+            border-radius: var(--radius-full);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        p {
+            color: var(--color-text-muted);
+            font-size: 1.125rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-text-main);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(244, 169, 0, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--color-accent);
+            color: var(--color-text-main);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-accent);
+            color: var(--color-text-main);
+        }
+
+        .btn-icon {
+            font-size: 1.25rem;
+        }
+
+        #shareBtn {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            gap: 0.375rem;
+        }
+
+        #shareBtn .btn-icon {
+            font-size: 1rem;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 38px;
+            height: 38px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+            color: #FFF;
+        }
+
+        /* Animations */
+        [data-animate] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        [data-animate].visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Header / Menu */
+        .header-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: #FFFFFF;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* Language Switcher */
+        .lang-switcher {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 2px;
+            border-radius: var(--radius-full);
+            display: flex;
+            gap: 2px;
+        }
+
+        .lang-btn {
+            padding: 3px 6px;
+            border-radius: var(--radius-full);
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--color-text-muted);
+            transition: var(--transition);
+        }
+
+        .lang-btn:hover {
+            background: rgba(255,255,255,0.5);
+        }
+
+        .lang-btn.active {
+            background: var(--color-accent);
+            color: var(--color-text-main);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .hero-logo {
+            width: 72px;
+            height: auto;
+            mix-blend-mode: multiply;
+        }
+
+        @media (min-width: 640px) {
+            .hero-logo {
+                width: 92px;
+            }
+        }
+
+        /* =========================================
+           HERO SECTION
+           ========================================= */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: #050505;
+            color: var(--color-white);
+            overflow: hidden;
+            padding-top: 80px; /* Space for logo */
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: url('https://cpcwebmarketing.com/wp-content/uploads/2025/03/blue-futuristic-stream-data-communication-flying-into-digital-technologic-animation-3d-rendering.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 800px;
+            padding: 0 1.5rem;
+        }
+
+
+
+        .hero h1 {
+            color: var(--color-white);
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            margin-bottom: 1.5rem;
+            font-size: clamp(1.75rem, 3.5vw, 2.8rem); /* Reduced by 30% */
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.875rem; /* Reduced by 30% from 1.25rem */
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons .btn {
+            padding: 0.5rem 1rem; /* Reduced by 50% */
+            font-size: 0.75rem; /* Reduced size */
+            gap: 0.375rem;
+        }
+
+        .hero-buttons .btn-icon {
+            font-size: 1rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .hero-footer-text {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: 300;
+        }
+
+
+
+        /* =========================================
+           ABOUT SECTION
+           ========================================= */
+        .about-content {
+            display: block;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            text-align: center;
+        }
+
+        .about-logo {
+            display: block;
+            margin: 0 auto 1.5rem auto;
+            max-width: 150px;
+            height: auto;
+        }
+
+        .differentials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .differential-card {
+            background: var(--color-bg-light);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--color-accent);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .differential-card:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .differential-card h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+
+
+        /* =========================================
+           SERVICES SECTION (Accordion Style)
+           ========================================= */
+        .services-container {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .service-accordion-item {
+            background: var(--color-bg-light);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .service-accordion-item:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-accent);
+        }
+
+        .accordion-header {
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            background: transparent;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+        }
+
+        .accordion-title-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-icon-small {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            background: rgba(244, 169, 0, 0.1);
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .accordion-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-text-main);
+        }
+
+        .accordion-arrow {
+            font-size: 1.2rem;
+            color: var(--color-text-muted);
+            transition: transform 0.3s ease;
+        }
+
+        .service-accordion-item.active .accordion-arrow {
+            transform: rotate(180deg);
+            color: var(--color-accent);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background: rgba(0,0,0,0.01);
+        }
+
+        .service-accordion-item.active .accordion-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            /* max-height is set via JS */
+        }
+
+        .accordion-content p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            padding-left: 3.5rem; /* Align with text */
+        }
+
+        @media (max-width: 640px) {
+            .accordion-content p {
+                padding-left: 0;
+            }
+        }
+
+        /* =========================================
+           OFFER SECTION
+           ========================================= */
+        .offer-container {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            border-radius: var(--radius-lg);
+            padding: 3rem 1.5rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .offer-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(244, 169, 0, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(30%, -30%);
+        }
+
+        .offer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .offer-text h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .offer-text h2::after {
+            background-color: var(--color-accent);
+        }
+
+        .offer-badge {
+            display: inline-block;
+            background: var(--color-accent);
+            color: black;
+            font-weight: 800;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-full);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .price-box {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            opacity: 0.6;
+            font-size: 1.2rem;
+            display: block;
+        }
+
+        .price-new {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-accent);
+            display: block;
+            line-height: 1;
+            margin-top: 0.5rem;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 177.77%; /* 9:16 Aspect Ratio for Shorts */
+            background: #000;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (min-width: 768px) {
+            .offer-content {
+                grid-template-columns: 1.2fr 0.8fr;
+            }
+            .video-wrapper {
+                max-width: 350px;
+                margin: 0 auto;
+            }
+        }
+
+        /* =========================================
+           FAQ SECTION
+           ========================================= */
+        .accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .accordion-item {
+            background: var(--color-bg-light);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .accordion-header {
+            padding: 1.5rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--color-text-main);
+            transition: background 0.3s;
+        }
+
+        .accordion-header:hover {
+            background: rgba(0,0,0,0.02);
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+            color: var(--color-accent);
+            font-size: 1.2rem;
+            min-width: 24px;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: rgba(243, 244, 246, 0.5);
+        }
+
+        .accordion-content p {
+            padding: 1.5rem;
+            margin: 0;
+            color: var(--color-text-muted);
+            font-size: 1rem;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px; /* Arbitrary large height */
+        }
+
+        /* =========================================
+           LOCATION SECTION
+           ========================================= */
+        .location-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .location-info {
+            padding: 2rem;
+            text-align: center;
+            background: white;
+        }
+
+        /* =========================================
+           SHARE SECTION
+           ========================================= */
+        .share-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        #qrcode {
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: var(--radius-sm);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.05);
+            display: inline-block;
+        }
+        
+        #qrcode img {
+            margin: 0 auto;
+        }
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+        .footer {
+            background-color: var(--color-accent);
+            color: var(--color-text-main);
+            padding: 4rem 1.5rem 2rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            max-width: 125px;
+            margin: 0 auto 2rem;
+            filter: brightness(0); /* Make logo black if needed for contrast */
+        }
+
+        .footer-contacts {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(0,0,0,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            color: black;
+        }
+
+        .contact-icon:hover {
+            background: black;
+            color: var(--color-accent);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            font-size: 0.45rem;
+            opacity: 1;
+            color: #000000;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            padding-top: 2rem;
+        }
+
+        /* =========================================
+           ANIMATIONS KEYFRAMES
+           ========================================= */
+        @keyframes pulse-glow {
+            0% { opacity: 0.3; transform: scale(1); }
+            100% { opacity: 0.6; transform: scale(1.1); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header / Menu -->
+    <header class="header-nav">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+            <button class="lang-btn active" id="btn-pt">BR</button>
+            <button class="lang-btn" id="btn-en">US</button>
+        </div>
+
+        <!-- Logo -->
+        <img src="https://cpcwebmarketing.com/wp-content/uploads/2026/03/Logo_CPC-Web-MArketing_Agency.jpg" alt="CPC Web Marketing Logo" class="hero-logo">
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content" data-animate>
+            <h1 data-i18n="hero-title">Uma agência americana que fala <span style="color: #f4a900;">Português</span>.</h1>
+            <p data-i18n="hero-subtitle">Ajudamos empresas a crescer nos Estados Unidos através de estratégias de Website, SEO, Google Business Profile, Tráfego Pago e CRM, conectando seu negócio ao cliente certo.</p>
+            
+            <div class="hero-buttons">
+                <a href="https://wa.me/18609608861" target="_blank" class="btn btn-primary">
+                    <i class="ph ph-whatsapp-logo btn-icon"></i>
+                    WhatsApp
+                </a>
+                <a href="sms:+18609608861?body=Mande uma mensagem" class="btn btn-outline" style="border-color: white; color: white;">
+                    <i class="ph ph-chat-text btn-icon"></i>
+                    <span data-i18n="btn-sms">Mande uma mensagem</span>
+                </a>
+            </div>
+
+            <p class="hero-footer-text" data-i18n="hero-footer">
+                Ajudamos empresas brasileiras nos EUA a crescerem com estrutura digital sólida.
+            </p>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="section bg-white" id="oferta">
+        <div class="container">
+            <div class="offer-container" data-animate>
+                <div class="offer-content">
+                    <div class="offer-text">
+                        <span class="offer-badge" data-i18n="offer-badge">Oferta de Lançamento</span>
+                        <h2 data-i18n="offer-title">Bio Link Instagram Profissional</h2>
+                        <p data-i18n="offer-desc">Transforme a bio do seu Instagram em um mini-website de alta conversão. Design mobile-first, botões estratégicos e prova social para gerar mais leads.</p>
+                        
+                        <div class="price-box">
+                            <span class="price-new" data-i18n="offer-new-price">A partir de $199</span>
+                        </div>
+
+                        <a href="https://wa.me/18609608861?text=Olá! Gostaria de informações sobre o Bio Link do Instagram para mim!" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem; gap: 0.375rem;" onclick="fbq('track', 'Lead', {content_name: 'Bio Link Instagram', content_category: 'Oferta Bio Link', value: 199, currency: 'USD'});">
+                            <i class="ph ph-whatsapp-logo btn-icon" style="font-size: 1rem;"></i>
+                            <span data-i18n="offer-btn">Quero meu Bio Link Agora</span>
+                        </a>
+                    </div>
+                    
+                    <div class="offer-video">
+                        <div class="video-wrapper">
+                            <!-- Using embed URL for YouTube Shorts -->
+                            <iframe src="https://www.youtube.com/embed/9vFvNltOG-E?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1" title="Bio Link Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section bg-white" id="quem-somos">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-animate>
+                    <img src="https://cpcwebmarketing.com/wp-content/uploads/2025/05/logo-cps-digital-mkt-8.png" alt="CPS Digital Marketing Logo" class="about-logo">
+                    <h2 data-i18n="about-title">Quem Somos</h2>
+                    <p data-i18n="about-desc">
+                        Somos uma Agência de Marketing Brasileira estrategicamente localizada em Connecticut, EUA. Desde 2023, operamos no coração do mercado americano, dedicados exclusivamente a impulsionar empresários brasileiros que buscam não apenas sobreviver, mas dominar seus nichos nos Estados Unidos. Não somos observadores externos; vivemos a sua realidade, entendemos suas dores e dominamos o comportamento do consumidor local.
+                    </p>
+                    
+                    <div class="differentials">
+                        <div class="differential-card">
+                            <h4 class="text-accent"><i class="ph ph-map-pin"></i> <span data-i18n="diff-1-title">Localização Estratégica</span></h4>
+                            <p data-i18n="diff-1-desc">Estamos fisicamente em Connecticut, vivendo o dia a dia do mercado.</p>
+                        </div>
+                        <div class="differential-card">
+                            <h4 class="text-accent"><i class="ph ph-users"></i> <span data-i18n="diff-2-title">Expertise Cultural</span></h4>
+                            <p data-i18n="diff-2-desc">Entendemos profundamente a mente do cliente americano.</p>
+                        </div>
+                        <div class="differential-card">
+                            <h4 class="text-accent"><i class="ph ph-translate"></i> <span data-i18n="diff-3-title">Comunicação Nativa</span></h4>
+                            <p data-i18n="diff-3-desc">Falamos a língua do empreendedor brasileiro com a eficiência americana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section bg-gray" id="servicos">
+        <div class="container">
+            <div class="text-center" data-animate>
+                <h2 data-i18n="services-title">Nossos Serviços</h2>
+                <p data-i18n="services-subtitle" style="max-width: 600px; margin: 0 auto;">Soluções completas para digitalizar e escalar seu negócio na América.</p>
+            </div>
+
+            <div class="services-container">
+                <!-- Service 1 -->
+                <div class="service-accordion-item" data-animate>
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i class="ph ph-desktop service-icon-small"></i>
+                            <h3 data-i18n="serv-1-title">Website Design</h3>
+                        </div>
+                        <i class="ph ph-caret-down accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="serv-1-desc">Criamos websites profissionais, rápidos e responsivos, projetados para gerar autoridade, capturar leads e transformar visitantes em clientes através de design estratégico.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-accordion-item" data-animate>
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i class="ph ph-magnifying-glass service-icon-small"></i>
+                            <h3 data-i18n="serv-2-title">SEO Optimization</h3>
+                        </div>
+                        <i class="ph ph-caret-down accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="serv-2-desc">Otimizamos seu website para o topo do Google, aumentando tráfego orgânico qualificado e fazendo sua empresa ser encontrada por quem procura seus serviços.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-accordion-item" data-animate>
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i class="ph ph-map-trifold service-icon-small"></i>
+                            <h3 data-i18n="serv-3-title">Local SEO Services</h3>
+                        </div>
+                        <i class="ph ph-caret-down accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="serv-3-desc">Posicionamos sua empresa no Google Maps e buscas locais, otimizando seu Perfil e citações para gerar mais ligações e visitas na sua região.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-accordion-item" data-animate>
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i class="ph ph-share-network service-icon-small"></i>
+                            <h3 data-i18n="serv-4-title">Social Media</h3>
+                        </div>
+                        <i class="ph ph-caret-down accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="serv-4-desc">Gestão estratégica de redes sociais com conteúdo e posicionamento de marca que aumentam visibilidade, engajamento e atraem novos clientes.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-accordion-item" data-animate>
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i class="ph ph-google-logo service-icon-small"></i>
+                            <h3 data-i18n="serv-5-title">Google Ads</h3>
+                        </div>
+                        <i class="ph ph-caret-down accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="serv-5-desc">Campanhas focadas em intenção de compra, atraindo clientes prontos para contratar e maximizando seu retorno sobre investimento (ROI).</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-accordion-item" data-animate>
+                    <button class="accordion-header">
+                        <div class="accordion-title-group">
+                            <i class="ph ph-meta-logo service-icon-small"></i>
+                            <h3 data-i18n="serv-6-title">Meta Ads</h3>
+                        </div>
+                        <i class="ph ph-caret-down accordion-arrow"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="serv-6-desc">Campanhas no Facebook e Instagram para alcançar o público certo, gerar reconhecimento de marca e leads qualificados para vendas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-gray" id="faq">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 3rem;" data-animate>
+                <h2 data-i18n="faq-title">Perguntas Frequentes</h2>
+            </div>
+
+            <div class="accordion" id="faqAccordion" data-animate>
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span data-i18n="faq-1-q">Como minha empresa de limpeza ou construção pode conseguir mais clientes?</span>
+                        <i class="ph ph-caret-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="faq-1-a">Combine um website profissional, Google Business Profile otimizado e anúncios online. Essa estratégia aumenta sua visibilidade nas buscas locais, melhora a credibilidade da empresa e gera leads qualificados quando clientes procuram serviços na sua região.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span data-i18n="faq-2-q">Eu realmente preciso de um website se já tenho um Google Business Profile?</span>
+                        <i class="ph ph-caret-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="faq-2-a">Sim. O Google Business Profile ajuda clientes a encontrar sua empresa, mas um website profissional mostra seus serviços, aumenta credibilidade, apresenta trabalhos realizados e facilita contato direto com clientes interessados.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span data-i18n="faq-3-q">Qual é a melhor estratégia de marketing para empresas de serviços?</span>
+                        <i class="ph ph-caret-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="faq-3-a">A melhor estratégia combina SEO local, Google Ads e um website otimizado. Isso permite que sua empresa apareça nas buscas do Google, gere leads rapidamente e construa presença digital forte.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span data-i18n="faq-4-q">Quanto tempo o SEO leva para trazer resultados?</span>
+                        <i class="ph ph-caret-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="faq-4-a">SEO geralmente leva entre três e seis meses para mostrar resultados consistentes. Depois disso, sua empresa pode aparecer no Google de forma orgânica e gerar leads sem pagar por cada clique.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span data-i18n="faq-5-q">Vale a pena investir em Google Ads para empresas de serviços?</span>
+                        <i class="ph ph-caret-down accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p data-i18n="faq-5-a">Sim. Google Ads permite que sua empresa apareça quando clientes procuram serviços como limpeza ou construção. Com campanhas bem configuradas, é possível gerar leads qualificados rapidamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section bg-white" id="localizacao">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 2rem;" data-animate>
+                <h2 data-i18n="location-title">Onde Estamos</h2>
+                <p data-i18n="location-desc">Estamos em Connecticut, Estados Unidos, vivendo de perto o mercado onde nossos clientes atuam. Essa proximidade nos permite entender o comportamento do consumidor americano e criar estratégias digitais que realmente geram resultados.</p>
+            </div>
+
+            <div class="location-card" data-animate>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d379562.5326830737!2d-72.99933304169524!3d41.65002008899881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e65311f4ed5929%3A0xf2829032750234!2sConnecticut%2C%20USA!5e0!3m2!1sen!2sbr!4v1709733000000!5m2!1sen!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-info">
+                    <p style="font-weight: 600; color: black;">Connecticut, United States</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Section -->
+    <section class="section bg-gray" id="compartilhe">
+        <div class="container">
+            <div class="share-card" data-animate>
+                <h2 data-i18n="share-title">Compartilhe</h2>
+                <p data-i18n="share-desc">Escaneie o QR Code ou clique abaixo para compartilhar este link.</p>
+                
+                <div id="qrcode"></div>
+                
+                <br>
+                <button id="shareBtn" class="btn btn-primary">
+                    <i class="ph ph-share-network btn-icon"></i>
+                    <span data-i18n="share-btn">Compartilhar Link</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="https://cpcwebmarketing.com/wp-content/uploads/2025/05/logo-cps-digital-mkt-8.png" alt="CPC Logo Footer" class="footer-logo">
+            
+            <div class="footer-contacts">
+                <a href="https://wa.me/18609608861" target="_blank" class="contact-icon" aria-label="WhatsApp">
+                    <i class="ph ph-whatsapp-logo"></i>
+                </a>
+                <a href="sms:+18609608861" class="contact-icon" aria-label="SMS">
+                    <i class="ph ph-chat-text"></i>
+                </a>
+                <a href="tel:+18609608861" class="contact-icon" aria-label="Phone">
+                    <i class="ph ph-phone"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                <p>Copyright © 2026 CPCWEB Marketing, All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/18609608861" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <script>
+        // --- Translations ---
+        const translations = {
+            pt: {
+                "hero-title": "Uma agência americana que fala <span style='color: #f4a900;'>Português</span>.",
+                "hero-subtitle": "Ajudamos empresas a crescer nos Estados Unidos através de estratégias de Website, SEO, Google Business Profile, Tráfego Pago e CRM, conectando seu negócio ao cliente certo.",
+                "btn-sms": "Mande uma mensagem",
+                "hero-footer": "Ajudamos empresas brasileiras nos EUA a crescerem com estrutura digital sólida.",
+                "about-title": "Quem Somos",
+                "about-desc": "Somos uma Agência de Marketing Brasileira estrategicamente localizada em Connecticut, EUA. Desde 2023, operamos no coração do mercado americano, dedicados exclusivamente a impulsionar empresários brasileiros que buscam não apenas sobreviver, mas dominar seus nichos nos Estados Unidos. Não somos observadores externos; vivemos a sua realidade, entendemos suas dores e dominamos o comportamento do consumidor local.",
+                "diff-1-title": "Localização Estratégica",
+                "diff-1-desc": "Estamos fisicamente em Connecticut, vivendo o dia a dia do mercado.",
+                "diff-2-title": "Expertise Cultural",
+                "diff-2-desc": "Entendemos profundamente a mente do cliente americano.",
+                "diff-3-title": "Comunicação Nativa",
+                "diff-3-desc": "Falamos a língua do empreendedor brasileiro com a eficiência americana.",
+                "services-title": "Nossos Serviços",
+                "services-subtitle": "Soluções completas para digitalizar e escalar seu negócio na América.",
+                "serv-1-title": "Website Design",
+                "serv-1-desc": "Criamos websites profissionais, rápidos e responsivos, projetados para gerar autoridade, capturar leads e transformar visitantes em clientes através de design estratégico.",
+                "serv-2-title": "SEO Optimization",
+                "serv-2-desc": "Otimizamos seu website para o topo do Google, aumentando tráfego orgânico qualificado e fazendo sua empresa ser encontrada por quem procura seus serviços.",
+                "serv-3-title": "Local SEO Services",
+                "serv-3-desc": "Posicionamos sua empresa no Google Maps e buscas locais, otimizando seu Perfil e citações para gerar mais ligações e visitas na sua região.",
+                "serv-4-title": "Social Media",
+                "serv-4-desc": "Gestão estratégica de redes sociais com conteúdo e posicionamento de marca que aumentam visibilidade, engajamento e atraem novos clientes.",
+                "serv-5-title": "Google Ads",
+                "serv-5-desc": "Campanhas focadas em intenção de compra, atraindo clientes prontos para contratar e maximizando seu retorno sobre investimento (ROI).",
+                "serv-6-title": "Meta Ads",
+                "serv-6-desc": "Campanhas no Facebook e Instagram para alcançar o público certo, gerar reconhecimento de marca e leads qualificados para vendas.",
+                "offer-badge": "Oferta de Lançamento",
+                "offer-title": "Bio Link Instagram Profissional",
+                "offer-desc": "Transforme a bio do seu Instagram em um mini-website de alta conversão. Design mobile-first, botões estratégicos e prova social para gerar mais leads.",
+                "offer-old-price": "",
+                "offer-new-price": "A partir de $199",
+                "offer-btn": "Quero meu Bio Link Agora",
+                "faq-title": "Perguntas Frequentes",
+                "faq-1-q": "Como minha empresa de limpeza ou construção pode conseguir mais clientes?",
+                "faq-1-a": "Combine um website profissional, Google Business Profile otimizado e anúncios online. Essa estratégia aumenta sua visibilidade nas buscas locais, melhora a credibilidade da empresa e gera leads qualificados quando clientes procuram serviços na sua região.",
+                "faq-2-q": "Eu realmente preciso de um website se já tenho um Google Business Profile?",
+                "faq-2-a": "Sim. O Google Business Profile ajuda clientes a encontrar sua empresa, mas um website profissional mostra seus serviços, aumenta credibilidade, apresenta trabalhos realizados e facilita contato direto com clientes interessados.",
+                "faq-3-q": "Qual é a melhor estratégia de marketing para empresas de serviços?",
+                "faq-3-a": "A melhor estratégia combina SEO local, Google Ads e um website otimizado. Isso permite que sua empresa apareça nas buscas do Google, gere leads rapidamente e construa presença digital forte.",
+                "faq-4-q": "Quanto tempo o SEO leva para trazer resultados?",
+                "faq-4-a": "SEO geralmente leva entre três e seis meses para mostrar resultados consistentes. Depois disso, sua empresa pode aparecer no Google de forma orgânica e gerar leads sem pagar por cada clique.",
+                "faq-5-q": "Vale a pena investir em Google Ads para empresas de serviços?",
+                "faq-5-a": "Sim. Google Ads permite que sua empresa apareça quando clientes procuram serviços como limpeza ou construção. Com campanhas bem configuradas, é possível gerar leads qualificados rapidamente.",
+                "location-title": "Onde Estamos",
+                "location-desc": "Estamos em Connecticut, Estados Unidos, vivendo de perto o mercado onde nossos clientes atuam. Essa proximidade nos permite entender o comportamento do consumidor americano e criar estratégias digitais que realmente geram resultados.",
+                "share-title": "Compartilhe",
+                "share-desc": "Escaneie o QR Code ou clique abaixo para compartilhar este link.",
+                "share-btn": "Compartilhar Link"
+            },
+            en: {
+                "hero-title": "Operating on referrals is not the same as operating with predictability.",
+                "hero-subtitle": "If your Company relies solely on referrals to close contracts, your operation is not structured.",
+                "btn-sms": "Send a message",
+                "hero-footer": "We help Brazilian companies in the US grow with a solid digital structure.",
+                "about-title": "Who We Are",
+                "about-desc": "We are a Brazilian Marketing Agency strategically located in Connecticut, USA. Since 2023, we have been operating in the heart of the American market, exclusively dedicated to boosting Brazilian entrepreneurs who seek not only to survive but to dominate their niches in the United States. We are not outside observers; we live your reality, understand your pains, and master local consumer behavior.",
+                "diff-1-title": "Strategic Location",
+                "diff-1-desc": "We are physically in Connecticut, living the market day by day.",
+                "diff-2-title": "Cultural Expertise",
+                "diff-2-desc": "We deeply understand the American customer's mindset.",
+                "diff-3-title": "Native Communication",
+                "diff-3-desc": "We speak the language of the Brazilian entrepreneur with American efficiency.",
+                "services-title": "Our Services",
+                "services-subtitle": "Complete solutions to digitize and scale your business in America.",
+                "serv-1-title": "Website Design",
+                "serv-1-desc": "We create professional, fast, and responsive websites designed to generate authority, capture leads, and turn visitors into customers through strategic design.",
+                "serv-2-title": "SEO Optimization",
+                "serv-2-desc": "We optimize your website to the top of Google, increasing qualified organic traffic and making your company found by those looking for your services.",
+                "serv-3-title": "Local SEO Services",
+                "serv-3-desc": "We position your company on Google Maps and local searches, optimizing your Profile and citations to generate more calls and visits in your region.",
+                "serv-4-title": "Social Media",
+                "serv-4-desc": "Strategic social media management with content and brand positioning that increase visibility, engagement, and attract new customers.",
+                "serv-5-title": "Google Ads",
+                "serv-5-desc": "Campaigns focused on purchase intent, attracting customers ready to hire and maximizing your return on investment (ROI).",
+                "serv-6-title": "Meta Ads",
+                "serv-6-desc": "Campaigns on Facebook and Instagram to reach the right audience, generate brand awareness, and qualified leads for sales.",
+                "offer-badge": "Launch Offer",
+                "offer-title": "Professional Instagram Bio Link",
+                "offer-desc": "Transform your Instagram bio into a high-conversion mini-website. Mobile-first design, strategic buttons, and social proof to generate more leads.",
+                "offer-old-price": "",
+                "offer-new-price": "From $199",
+                "offer-btn": "Get my Bio Link Now",
+                "faq-title": "Frequently Asked Questions",
+                "faq-1-q": "How can my cleaning or construction company get more customers?",
+                "faq-1-a": "Combine a professional website, optimized Google Business Profile, and online ads. This strategy increases your visibility in local searches, improves company credibility, and generates qualified leads when customers look for services in your area.",
+                "faq-2-q": "Do I really need a website if I already have a Google Business Profile?",
+                "faq-2-a": "Yes. The Google Business Profile helps customers find your company, but a professional website showcases your services, increases credibility, presents past work, and facilitates direct contact with interested customers.",
+                "faq-3-q": "What is the best marketing strategy for service companies?",
+                "faq-3-a": "The best strategy combines Local SEO, Google Ads, and an optimized website. This allows your company to appear in Google searches, generate leads quickly, and build a strong digital presence.",
+                "faq-4-q": "How long does SEO take to bring results?",
+                "faq-4-a": "SEO usually takes between three and six months to show consistent results. After that, your company can appear on Google organically and generate leads without paying for every click.",
+                "faq-5-q": "Is it worth investing in Google Ads for service companies?",
+                "faq-5-a": "Yes. Google Ads allows your company to appear when customers search for services like cleaning or construction. With well-configured campaigns, it is possible to generate qualified leads quickly.",
+                "location-title": "Where We Are",
+                "location-desc": "We are in Connecticut, USA, close to the reality of Brazilian entrepreneurs doing business in the United States.",
+                "share-title": "Share",
+                "share-desc": "Scan the QR Code or click below to share this link.",
+                "share-btn": "Share Link"
+            }
+        };
+
+        let currentLang = 'pt';
+        const btnPt = document.getElementById('btn-pt');
+        const btnEn = document.getElementById('btn-en');
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            
+            // Update buttons
+            if (lang === 'pt') {
+                btnPt.classList.add('active');
+                btnEn.classList.remove('active');
+            } else {
+                btnPt.classList.remove('active');
+                btnEn.classList.add('active');
+            }
+
+            // Update Text Content
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    element.textContent = translations[currentLang][key];
+                }
+            });
+        }
+
+        btnPt.addEventListener('click', () => setLanguage('pt'));
+        btnEn.addEventListener('click', () => setLanguage('en'));
+
+        // --- Accordion Logic ---
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const content = item.querySelector('.accordion-content');
+                const isActive = item.classList.contains('active');
+
+                // Close all other items (optional, but good for "form" feel)
+                document.querySelectorAll('.service-accordion-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.accordion-content').style.maxHeight = null;
+                    }
+                });
+
+                // Toggle current item
+                if (isActive) {
+                    item.classList.remove('active');
+                    content.style.maxHeight = null;
+                } else {
+                    item.classList.add('active');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+
+
+
+        // --- QR Code Generation ---
+        const qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: window.location.href,
+            width: 150,
+            height: 150,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+        // --- Share Button Logic ---
+        const shareBtn = document.getElementById('shareBtn');
+        shareBtn.addEventListener('click', async () => {
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: 'CPC Web Marketing',
+                        text: 'Agência de Marketing Brasileira em Connecticut',
+                        url: window.location.href
+                    });
+                } catch (err) {
+                    console.log('Error sharing:', err);
+                }
+            } else {
+                // Fallback
+                navigator.clipboard.writeText(window.location.href);
+                const originalText = shareBtn.querySelector('span').textContent;
+                shareBtn.querySelector('span').textContent = 'Link Copiado!';
+                setTimeout(() => {
+                    shareBtn.querySelector('span').textContent = originalText;
+                }, 2000);
+            }
+        });
+
+        // --- Scroll Animation ---
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('[data-animate]').forEach(el => {
+            observer.observe(el);
+        });
+
+    </script>
+</body>
+</html>
